@@ -1,0 +1,10 @@
+# Mac
+.DS_Store
+
+# IDE
+.vscode
+.idea
+
+# NPM
+node_modules
+package-lock.json

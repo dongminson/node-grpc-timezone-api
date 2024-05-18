@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package timezonePackage;
+
+message TimezoneRequest {
+  string time = 1;
+  string fromTimezone = 2;
+  string toTimezone = 3;
+}
+
+message TimezoneResponse {
+  string convertedTime = 1;
+}
+
+service TimezoneConverter {
+  rpc ConvertTimezone (TimezoneRequest) returns (TimezoneResponse) {}
+}
